@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  background-color: hsl(0, 0%, 96%);
+}
+
+.player-profiles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.footballer-profile {
+  flex-basis: 225px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 13px;
+  padding-bottom: 20px;
+  background-color: hsl(0, 0%, 100%);
+}
+.footballer-profile > img {
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.footballer-profile > h3 {
+  font-weight: 800;
+  font-size: 18px;
+  text-align: center;
+}
+.footballer-profile > h4 {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 0px;
+}
+.stats {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding-left: 18px;
+}
+
+.stats > img {
+  height: 18px;
+}
+
+.stats > p {
+  margin-block: 3px;
+  padding-right: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  color: hsl(240, 2%, 10%);
+}
